@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            height: 100px;
+            width: 800px;
+            background-color: gray;
+        }
+
+        .mobile-only {
+            display: none;
+        }
+
+        @media screen and (min-width: 512px) {
+
+            .mobile-only {
+                display: block;
+                background-color: bisque;
+            }
+
+        }
+
+        @media screen and (min-width: 976px) {
+
+            .mobile-only {
+                display: block;
+                background-color: aquamarine;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+        Some text here!
+    </div>
+
+    <div class="mobile-only">
+
+        Show only on mobile!
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" type="text/css" href="htmlstyles.css" />
+
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        div {
+            /* display: inline; */
+        }
+
+        #div2 {
+            width: 400px;
+            height: 400px;
+            border: 2px solid #cd3d3d;
+            padding: 4px;
+            margin: 4px;
+            box-sizing: border-box;
+            outline: 2px solid black;
+        }
+
+        .li-class {
+            color:rgb(200, 226, 53)
+        }
+
+        ul li {
+
+            border: 1px solid brown
+
+        }
+
+        div > span {
+
+            border: 1px solid rgb(173, 229, 75)
+
+        }
+
+        ol + ul {
+            background-color: antiquewhite;
+        }
+
+        a:active {
+            color: brown
+        }
+
+        a:visited {
+            color:rgb(173, 229, 75)
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+        p::first-line {
+            font-weight: 600;
+        }
+
+        .span1:before {
+            content: '😀';
+        }
+
+        [data-name="car"] {
+            color:bisque
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <table>
+        <caption> Table caption </caption>
+        <thead>
+            <th>Column 1 </th>
+            <th> Column 2 </th>
+            <th> Column 3 </th>
+            <th> Column 4 </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid rgb(200, 226, 53);">
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div>
+        It just a div.
+    </div>
+
+    <span> A span! </span>
+
+
+    <ol>
+        <li class="li-class" > First item </li>
+        <li> First item </li>
+
+        <li> First item </li>
+        <li> First item </li>
+    </ol>
+
+
+    <ul>
+        <li class="li-class" > First item </li>
+        <li> First item </li>
+
+        <li> First item </li>
+        <li> First item </li>
+    </ul>
+
+    <div id="div2">
+
+        Box model
+
+    </div>
+
+
+    <div>
+        <p>
+
+            <span>
+                Nested in div!
+            </span>
+        </p>
+            
+        <span>
+
+            Nested in para!
+
+        </span>
+    </div>
+
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" > Link  </a>
+
+
+    <div id="div3" >
+        <span class="span1" data-name="car" >
+            car😃
+        </span>
+        <br/>
+        <span class="span1" data-name="truck" >
+            truck
+        </span>
+        <br/>
+        <span class="span1" data-name="bike" >
+            bike
+        </span>
+    </div>
+
+
+</body>
+
+</html>
